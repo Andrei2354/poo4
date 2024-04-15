@@ -1,18 +1,10 @@
 # Crear un código con la exepción IndexError
 
 def resultadoLista(list)->int:
+    list = [1, 2, 3]
     almacen = list
     try:
-          print(almacen[3])
-
+          return almacen[3]
     except IndexError:
-        print("Valores fuera de rango")
+        return IndexError
 
-if __name__=="__main__":
-
-    def main()-> None:
-        list = [1, 2, 3]
-        list = [1, 2, 3, 5, 6]
-        resultadoLista(list)
-
-    main()
